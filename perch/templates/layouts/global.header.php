@@ -5,7 +5,7 @@
 <div class="container header-container">
     <header class="header wrapper">
         <a href="/" class="header__logo">
-            <img src="/img/calibro-logo.png" alt="Calibro Transport, Highway &amp; Infrastructure Consultants">
+            <img src="/img/calibro-logo@2x.png" alt="Calibro Transport, Highway &amp; Infrastructure Consultants">
         </a>
         <button class="menu button button--outline">Menu</button>
         <?php perch_pages_navigation([

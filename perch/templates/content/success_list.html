@@ -2,11 +2,18 @@
 <ul class="blocks">
 </perch:before>
 
-<li class="blocks__item">
-	<a href="?s=<perch:content id="slug" type="slug" />" class="blocks__link">
-		<perch:content id="image" type="image" width="300" height="300" crop="true" output="tag" class="blocks__image" />
-		<span class="blocks__title"><perch:content id="title" type="text" /></span>
-	</a>
+<li class="block">
+	<div class="block__front">
+		<a href="?s=<perch:content id="slug" type="slug" />" class="block__link">
+			<perch:content id="image" type="image" width="300" height="300" crop="true" output="tag" class="block__image block__front__image" />
+			<span class="block__title"><perch:content id="title" type="text" /></span>
+		</a>
+	</div>
+	<div class="block__back">
+		<h3 class="block__back__title"><perch:content id="title" type="text" /></h3>
+		<perch:content id="image" type="image" crop="true" output="tag" class="block__image block__back__image" />
+		<perch:content id="desc" type="textarea" label="Description" textile="true" editor="markitup" class="block__back__description" />
+	</div>
 </li>
 
 <perch:after>
