@@ -1,0 +1,13 @@
+<div class="container cta-container">
+	<div class="cta wrapper">
+		<div class="cta__text">
+			<h3 class="cta__heading">hey<perch:content id="cta_heading" type="text" label="Heading"></h3>
+			<p>yeah<perch:content id="cta_text" type="textarea" label="Text" size="m" editor="markitup" markdown="true"></p>
+		</div>
+		<div class="cta__action">
+        	<perch:if exists="cta_button_url">
+		        <a href='<perch:content id="cta_button_url" type="pagelist" label="Page" divider-before="Call to action link (optional)" />' class='button button--large'><perch:content id="cta_button_text" type="text" label="Link text" /></a>
+        	</perch:if>
+		</div>
+	</div>
+</div>

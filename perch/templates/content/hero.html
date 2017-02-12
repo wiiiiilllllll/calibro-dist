@@ -1,0 +1,12 @@
+<div class="container hero-container" style='background-image:url(<perch:content id="hero_background" type="image" label="Background image" />)'>
+    <div class="hero wrapper row">
+        <div class="hero__banner">
+        	<div class="hero__text">
+        	    <perch:content id="hero_text" type="textarea" label="Hero text" size="s" count="chars" editor="markitup" markdown="true"/>
+        	</div>
+        	<perch:if exists="button_url">
+		        <a href='<perch:content id="button_url" type="pagelist" label="Page" divider-before="Hero link (optional)" />' class='button hero__button'><perch:content id="button_text" type="text" label="Link text" /></a>
+        	</perch:if>
+        </div>
+    </div>
+</div>

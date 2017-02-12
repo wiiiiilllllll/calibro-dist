@@ -1,0 +1,35 @@
+<perch:form id="form-contact" method="post" app="perch_forms" role="form" class="form contact-form">
+	
+	<perch:error for="all" type="general">
+		<div class="alert error">
+			<perch:content id="error" class="form__alert form__error" type="textarea" label="General error message" textile="true" editor="markitup" />
+		</div>
+	</perch:error>
+
+	<fieldset class="form__fieldset">
+		<perch:label for="name" class="form__label">Your name:</perch:label>
+		<perch:input id="name" class="form__text" type="text" required="true" label="Name" />
+		<perch:error for="name" type="required"><p class="form__error">Please enter your name</p></perch:error>
+	</fieldset>
+
+	<fieldset class="form__fieldset">
+		<perch:label for="email" class="form__label">Your email:</perch:label>
+		<perch:input id="email" class="form__text" type="email" required="true" label="Email" />
+		<perch:error for="email" type="required"><p class="form__error">Please enter an email address</p></perch:error>
+		<perch:error for="email" type="format"><p class="form__error">Please enter a valid email address</p></perch:error>
+	</fieldset>
+
+	<fieldset class="form__fieldset">
+		<perch:label for="message" class="form__label">Your message:</perch:label>
+		<perch:input id="message" class="form__textarea" type="textarea" required="true" label="Message"></textarea>
+		<perch:error for="message" type="required"><p class="form__error">Please enter a message</p></perch:error>
+	</fieldset>
+
+	<perch:input type="submit" id="submit" class="button form__button" value="Send" />
+
+	<perch:success>
+		<div class="alert success">
+			<perch:content id="success" class="form__alert form__success" type="textarea" label="Thank you message" textile="true" editor="markitup" />
+		</div>
+	</perch:success>
+</perch:form>

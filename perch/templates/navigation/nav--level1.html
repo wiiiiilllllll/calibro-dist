@@ -1,0 +1,20 @@
+<perch:before>
+<nav class="nav header__nav">
+<ul class="nav__list">
+</perch:before>
+
+    <li class="nav__item drop">
+        <perch:if exists="subitems">
+        <a href="<perch:pages id="pagePath" />" class="nav__link drop__link">
+        <perch:else />
+        <a href="<perch:pages id="pagePath" />" class="nav__link">
+        </perch:if>
+            <perch:pages id="pageNavText" />
+        </a>
+        <perch:pages id="subitems" encode="false" />
+    </li>
+
+<perch:after>
+</ul>
+</nav>
+</perch:after>
