@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="/css/calibro.min.css">
     <!--[if lt IE 9]><script src="{{'/js/html5shiv.js'}}"></script><![endif]-->
     <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <script src="/js/vendor/jquery-1.11.2.min.js"></script><!-- TODO: this should be in the footer -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
 </head>
 <body>

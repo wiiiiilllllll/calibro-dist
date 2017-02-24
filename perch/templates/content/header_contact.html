@@ -1,0 +1,30 @@
+<perch:content id="item_type" type="radio" label="Item type" options="Plain text, Text with internal link, Text with external link, Plain image, Image with internal link, Image with external link" suppress="true" />
+
+<perch:if id="item_type" value="Plain text">
+	<li><perch:content id="item_text" type="text" label="Text" /></li>
+</perch:if>
+<perch:if id="item_type" value="Text with internal link">
+	<li><a href="<perch:content id="page" type="pagelist" label="Page" />">
+		<perch:content id="item_text" type="text" label="Text" />
+	</a></li>
+</perch:if>
+<perch:if id="item_type" value="Text with external link">
+	<li><a href="<perch:content id="url" type="text" label="URL" />">
+		<perch:content id="item_text" type="text" label="Text" />
+	</a></li>
+</perch:if>
+<perch:if id="item_type" value="Plain image">
+	<li>
+		<img src="<perch:content type="image" id="image" label="Image" width="800" />" alt="<perch:content type="text" id="alt" label="Description" help="e.g. Photo of MD John Smith with his best wig on" title="true" />" />
+	</li>
+</perch:if>
+<perch:if id="item_type" value="Image with internal link">
+	<li><a href="<perch:content id="page" type="pagelist" label="Page" />">
+		<img src="<perch:content type="image" id="image" label="Image" width="800" />" alt="<perch:content type="text" id="alt" label="Description" help="e.g. Photo of MD John Smith with his best wig on" title="true" />" />
+	</a></li>
+</perch:if>
+<perch:if id="item_type" value="Image with external link">
+	<li><a href="<perch:content id="url" type="text" label="URL" />">
+		<img src="<perch:content type="image" id="image" label="Image" width="800" />" alt="<perch:content type="text" id="alt" label="Description" help="e.g. Photo of MD John Smith with his best wig on" title="true" />" />
+	</a></li>
+</perch:if>

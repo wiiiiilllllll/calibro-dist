@@ -4,11 +4,20 @@
 
 <div class="container main-container">
 	<main class="main wrapper">
-
-		<h1>/public/services/index.php</h1>
-		<?php include(str_replace('/', DIRECTORY_SEPARATOR, '../perch/templates/pages/default.php')); ?>
-	
+		<h1 class="page-heading"><?php perch_pages_title(); ?></h1>
+		<?php
+		perch_content_custom('Service', array(
+			'page'=>'/services/**/*',
+			'template'=>'service_abstract.html',
+			'each' => function($item) {
+				// process as necessary, then return the modified item
+				$item['page_title'] = 
+					perch_page_attribute('pageTitle', array( '_id' => $item['_pageID'], ), true);
+				return $item;
+			}
+		));
+		?>
 	</main>
 </div>
 <?php perch_content('Call to action'); ?>
-<?php perch_content('Footer'); ?>
+<?php perch_layout('global.footer'); ?>

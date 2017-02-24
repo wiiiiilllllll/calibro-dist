@@ -8,8 +8,8 @@ var blocks = {
 	},
 
 	open: function(block) {
-		var back = block.find('.block__back').html();
-		$('.dialog__body').html(back);
+		var stuff = block.find('.block__back').html();
+		dialog.populate(stuff);
 		setTimeout(function(){
 			overlay.open();
 		}, 100);
@@ -58,6 +58,10 @@ var dialog = {
 		setTimeout(function(){
 			$('.dialog__body').html('')
 		}, 300);
+	},
+
+	populate: function(stuff) {
+		$('.dialog__body').html(stuff);
 	}
 }
 // Drop
@@ -74,10 +78,11 @@ var drop = {
 		$('body').on('click', '.drop__link', function(el){
 			el.preventDefault();
 			el.stopPropagation();
-			drop.closeAll();
+			// drop.closeAll();
+				drop.toggle( $(el.target).parent() );
 
 			if ($(this).parents('.drop--open')) {
-				drop.toggle( $(el.target).parent() );
+				// drop.toggle( $(el.target).parent() );
 			}
 		});
 	},
