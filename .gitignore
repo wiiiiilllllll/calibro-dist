@@ -1,3 +1,4 @@
 perch/resources
 perch/config
 .htaccess
+perch/config/config.php
