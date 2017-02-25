@@ -842,8 +842,10 @@ input, textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
 
 .flexbox .footer-container {
   margin-top: auto; }
@@ -986,7 +988,8 @@ footer p {
   pointer-events: none; }
   .drop--open .drop__link {
     box-shadow: 0 2px 1px rgba(85, 85, 85, 0.5);
-    background-color: #fff; }
+    background-color: #fff;
+    padding-bottom: 1em; }
   @media only screen and (min-width: 599px) {
     .drop__link {
       font-weight: normal;
@@ -1103,8 +1106,10 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
 
 .block {
   border-radius: .2em;
@@ -1178,8 +1183,10 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
 
 .member {
   -webkit-box-flex: 0;
