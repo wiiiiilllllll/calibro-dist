@@ -1,7 +1,10 @@
 var blocks = {
 	
 	init: function() {
-		$('.block').on('click', function(e){
+		console.log('blocks init')
+
+		$('.js-block').on('click', function(e){
+			console.log('clikk')
 			e.preventDefault();
 			blocks.open($(this));
 		})

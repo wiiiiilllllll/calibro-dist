@@ -1,6 +1,19 @@
-<div class="member">
-	<img src="<perch:content id="member_image" type="image" label="Image" />" class="member__image" alt="<perch:content id="member_name" type="text" label="Name"/>">
-	<h3 class="member__name"><perch:content id="member_name" type="text" label="Name"/></h3>
-	<span class="member__title"><perch:content id="member_title" type="text" label="Title (eg. 'Director')" /></span>
-	<span class="member__details"><perch:content id="member_text" type="text" label="Details (eg. post nominals)" /></span>
+<div class="member js-block">
+	<div class="member__front">
+		<img src="<perch:content id="member_image" type="image" label="Image" />" class="member__image" alt="<perch:content id="member_name" type="text" label="Name"/>">
+		<h3 class="member__name"><perch:content id="member_name" type="text" label="Name"/></h3>
+		<span class="member__title"><perch:content id="member_title" type="text" label="Title (eg. 'Director')" /></span>
+		<span class="member__details"><perch:content id="member_text" type="text" label="Details (eg. post nominals)" /></span>
+	</div>
+	<div class="block__back">
+		<div class="member__back-text">
+			<h3 class="member__name"><perch:content id="member_name" type="text" label="Name"/></h3>
+			<span class="member__title"><perch:content id="member_title" type="text" label="Title (eg. 'Director')" /></span>
+			<span class="member__details"><perch:content id="member_text" type="text" label="Details (eg. post nominals)" /></span>
+		</div>
+		<img src="<perch:content id="member_image" type="image" label="Image" />" class="member__image--back" alt="<perch:content id="member_name" type="text" label="Name"/>">
+		<div class="member__back-text">
+			<perch:content id="member__bio" type="textarea" label="Description" textile="true" editor="markitup" />
+		</div>
+	</div>
 </div>

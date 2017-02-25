@@ -1220,6 +1220,45 @@ footer p {
   margin-top: 1em;
   max-width: 2em; }
 
+@media only screen and (min-width: 500px) {
+  .member__image--back {
+    float: right;
+    width: 33.33333%;
+    padding-left: 2em; }
+    .member__image--back:last-child:after {
+      content: '';
+      clear: both;
+      display: table; }
+  .dialog__body .member__name {
+    margin-bottom: 1em;
+    margin-top: 0; }
+  .member__back-text {
+    float: left;
+    width: 66.66667%; }
+    .member__back-text:last-child:after {
+      content: '';
+      clear: both;
+      display: table; } }
+
+@media only screen and (min-width: 700px) {
+  .member__image--back {
+    float: right;
+    width: 50%; }
+    .member__image--back:last-child:after {
+      content: '';
+      clear: both;
+      display: table; }
+  .member__back-text {
+    float: left;
+    width: 50%; }
+    .member__back-text:last-child:after {
+      content: '';
+      clear: both;
+      display: table; } }
+
+.member__back-text {
+  margin-bottom: 1em; }
+
 .abstract {
   margin-bottom: 4em;
   margin-top: 2em; }

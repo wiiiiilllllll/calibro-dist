@@ -23,3 +23,5 @@
 	</main>
 </div>
 <?php perch_layout('global.footer'); ?>
+</body>
+</html>

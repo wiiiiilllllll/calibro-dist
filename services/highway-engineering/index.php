@@ -11,3 +11,5 @@
 </div>
 <?php perch_content('Call to action'); ?>
 <?php perch_layout('global.footer'); ?>
+</body>
+</html>

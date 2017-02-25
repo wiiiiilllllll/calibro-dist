@@ -30,5 +30,3 @@
     <script>window.jQuery || loadJS('/js/vendor/jquery-1.11.2.min.js')</script>
     <script>loadJS('/js/vendor/jquery.vide.min.js')</script>
     <script>loadJS('/js/calibro.min.js')</script>
-</body>
-</html>
