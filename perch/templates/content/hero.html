@@ -1,8 +1,5 @@
 <perch:content id="video-position" label="Video position" type="radio" options="Top, Centre, Bottom" suppress="true" />
-<div class="container hero-container" data-vide-bg='<perch:content id="hero_video" type="file" bucket="Video" label="Hero video" />' data-vide-options="position: 50%
-  <perch:if id="video-position" value="Top">10%"></perch:if>
-  <perch:if id="video-position" value="Middle">50%"></perch:if>
-  <perch:if id="video-position" value="Bottom">90%"></perch:if>
+<div class="container hero-container" data-vide-bg='<perch:content id="hero_video" type="file" bucket="Video" label="Hero video" />' data-vide-options="position: 50% <perch:if id="video-position" value="Top">10%</perch:if><perch:if id="video-position" value="Centre">50%</perch:if><perch:if id="video-position" value="Bottom">90%</perch:if>">
   <div class="hero wrapper row">
     <div class="hero__banner">
       <div class="hero__text">
