@@ -15,6 +15,6 @@
 </div>
 <?php perch_content('Call to action'); ?>
 <?php perch_layout('global.footer'); ?>
-<script>$(function(){blocks.init()})</script>
+<script>loadJS('/js/calibro.min.js',function(){blocks.init()})</script>
 </body>
 </html>
