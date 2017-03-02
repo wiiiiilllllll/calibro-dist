@@ -9,7 +9,12 @@
     <title><?php perch_pages_title(); ?> - Calibro Transport, Highway &amp; Infrastructure Consultants</title>
     <meta name="description" content='<?php perch_page_attributes("description"); ?>'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#a1bf35">
+    <meta name="theme-color" content="#afcb4a">
     <link rel="stylesheet" href="/css/calibro.min.css">
     <!--[if lt IE 9]><script src="{{'/js/html5shiv.js'}}"></script><![endif]-->
     <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
