@@ -6,7 +6,7 @@
     <header class="header wrapper">
         <div class="header__primary">
             <a href="/" class="header__logo">
-                <img src="/img/calibro-logo@2x.png" alt="Calibro Transport, Highway &amp; Infrastructure Consultants">
+                <img src="/img/calibro-logo-transparent@2x.png" alt="Calibro Transport, Highway &amp; Infrastructure Consultants">
             </a>
             <button class="menu button button--outline">Menu</button>
         </div>

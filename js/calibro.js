@@ -24,6 +24,10 @@ var blocks = {
 		overlay.close();
 	}
 }
+
+$(function(){
+	blocks.init();
+});
 // Debounce: a multi-purpose utility that will prevent a function
 // from being triggered rapidly; eg. within 250ms
 // Courtesy: http://davidwalsh.name/javascript-debounce-function

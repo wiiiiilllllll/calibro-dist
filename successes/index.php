@@ -44,6 +44,5 @@
 </div>
 <?php perch_content('Call to action'); ?>
 <?php perch_layout('global.footer'); ?>
-<script>loadJS('/js/calibro.min.js',function(){blocks.init()})</script>
 </body>
 </html>

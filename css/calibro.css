@@ -416,6 +416,10 @@ input, textarea {
   border: 1px solid #dddddd;
   border-radius: .2em; }
 
+ul {
+  padding-left: 1.2em;
+  text-indent: -.3em; }
+
 .button {
   background-color: #afcb4a;
   border: 1px solid transparent;
@@ -916,11 +920,14 @@ footer p {
 @media only screen and (min-width: 700px) {
   .intro__sidebar {
     float: right;
-    width: 33.33333%; }
+    width: 37.5%; }
     .intro__sidebar:last-child:after {
       content: '';
       clear: both;
       display: table; } }
+
+.intro__sidebar li {
+  margin: .5em 0; }
 
 .cta-container {
   background-color: #eeeeee;
@@ -988,8 +995,7 @@ footer p {
   pointer-events: none; }
   .drop--open .drop__link {
     box-shadow: 0 2px 1px rgba(85, 85, 85, 0.5);
-    background-color: #fff;
-    padding-bottom: 1em; }
+    background-color: #fff; }
   @media only screen and (min-width: 599px) {
     .drop__link {
       font-weight: normal;
