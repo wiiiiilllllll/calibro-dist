@@ -18,7 +18,7 @@
             break;
 
         default :
-            define("PERCH_DB_USERNAME", 'c4libroc_perch');
+            define("PERCH_DB_USERNAME", 'c4libroconsultan');
             define("PERCH_DB_PASSWORD", 'juz4rR@wEJ&PgJ7VnjwqfUBx');
             define("PERCH_DB_SERVER", "localhost");
             define("PERCH_DB_DATABASE", "c4libroc_perch");
