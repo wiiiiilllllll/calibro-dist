@@ -22,6 +22,15 @@
             define("PERCH_DB_PASSWORD", 'juz4rR@wEJ&PgJ7VnjwqfUBx');
             define("PERCH_DB_SERVER", "localhost");
             define("PERCH_DB_DATABASE", "c4libroc_perch");
+            define('PERCH_EMAIL_FROM', 'hello@calibroconsultants.com');
+            define('PERCH_EMAIL_FROM_NAME', 'Calibro Consultants');
+            define("PERCH_EMAIL_METHOD", "smtp");
+            define("PERCH_EMAIL_HOST", "calibro-consultants.com");
+            define("PERCH_EMAIL_AUTH", true);
+            define("PERCH_EMAIL_PORT", 465);
+            define("PERCH_EMAIL_USERNAME", "hello@calibro-consultants.com");
+            define("PERCH_EMAIL_PASSWORD", "u*95zfP^X7T6fJtQA4jFUb8*tcngwQhM");
+            define("PERCH_EMAIL_SECURE", "ssl");
             break;
     }
 
@@ -29,8 +38,6 @@
 
     define('PERCH_TZ', 'Europe/London');
 
-    define('PERCH_EMAIL_FROM', 'will@willwallace.name');
-    define('PERCH_EMAIL_FROM_NAME', 'Will Wallace');
 
     define('PERCH_LOGINPATH', '/perch');
     define('PERCH_PATH', str_replace(DIRECTORY_SEPARATOR.'config', '', __DIR__));
