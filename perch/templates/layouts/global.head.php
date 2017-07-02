@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title><?php perch_pages_title(); ?> - Calibro Transport, Highway &amp; Infrastructure Consultants</title>
+    <title><?php (perch_layout_has("title")?perch_layout_var("title"):perch_pages_title()); ?> - Calibro Transport, Highway &amp; Infrastructure Consultants</title>
     <meta name="description" content='<?php perch_page_attributes("description"); ?>'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
