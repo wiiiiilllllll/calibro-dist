@@ -1,5 +1,9 @@
 <?php
     
+    if (!$CurrentUser->has_priv('perch_forms.export')) {
+        //exit;
+    }
+
     $Forms = new PerchForms_Forms($API);
     $Responses = new PerchForms_Responses($API);
 
