@@ -567,7 +567,7 @@ blockquote {
     .wrapper {
       max-width: 1400px; } }
 
-.page-heading, .article__heading a {
+.page-heading {
   color: #afcb4a;
   font-weight: 400;
   font-size: 2.5em;
@@ -600,7 +600,8 @@ blockquote {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 0.76471em; }
+  font-size: 0.76471em;
+  margin-top: 2em; }
   .breadcrumb li {
     display: inline-block;
     margin-right: .3em; }
@@ -997,28 +998,6 @@ footer p {
         clear: both;
         display: table; } }
 
-@media only screen and (min-width: 700px) {
-  .service__left {
-    float: left;
-    width: 50%; }
-    .service__left:last-child:after {
-      content: '';
-      clear: both;
-      display: table; } }
-
-@media only screen and (min-width: 700px) {
-  .service__right {
-    float: left;
-    width: 50%;
-    padding: 0 8.33333%; }
-    .service__right:last-child:after {
-      content: '';
-      clear: both;
-      display: table; } }
-
-.service__subimage {
-  margin-top: 2em; }
-
 .drop__link {
   font-weight: bold;
   pointer-events: none; }
@@ -1342,6 +1321,11 @@ footer p {
   .abstract__image:hover {
     opacity: .8; }
 
+.abstract__meta {
+  display: inline-block;
+  font-size: .75em;
+  margin-bottom: .5em; }
+
 .abstract__heading {
   margin-top: 0; }
 
@@ -1372,36 +1356,27 @@ footer p {
   cursor: default;
   text-decoration: none; }
 
-@media only screen and (min-width: 600px) {
-  .article__text h1, .article__text .meta, .article__text .description {
-    max-width: 58.33333%; } }
-
-@media only screen and (min-width: 600px) {
-  .article__image {
-    float: right;
-    width: 33.33333%;
-    margin-bottom: 2em; }
-    .article__image:last-child:after {
+@media only screen and (min-width: 700px) {
+  .article__left {
+    float: left;
+    width: 50%; }
+    .article__left:last-child:after {
       content: '';
       clear: both;
       display: table; } }
 
-.article__heading {
-  font-size: .6em;
-  line-height: 1.2; }
-  @media only screen and (min-width: 900px) {
-    .article__heading {
-      font-size: 1em; } }
-  .article__heading a {
-    text-decoration: none; }
-    .article__heading a:hover {
-      text-decoration: underline; }
+@media only screen and (min-width: 700px) {
+  .article__right {
+    float: left;
+    width: 50%;
+    padding: 0 8.33333%; }
+    .article__right:last-child:after {
+      content: '';
+      clear: both;
+      display: table; } }
 
-.article__meta {
-  color: #aaaaaa;
-  font-size: 0.76471em;
-  position: relative;
-  text-transform: uppercase; }
+.article__subimage {
+  margin-top: 2em; }
 
 .blog-list {
   list-style-type: none;

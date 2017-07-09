@@ -1,25 +1,22 @@
-<perch:before>
-<ul class="hfeed listing blog-list" itemscope itemtype="http://schema.org/Blog">
-</perch:before>
-    <li class="hentry blog-list__item<perch:if exists="image"> has-image</perch:if>" itemscope itemtype="http://schema.org/BlogPosting">
-        <a href="<perch:blog id="postURL" />" rel="bookmark" class="blog-list__link row" itemprop="url">
-            <perch:if exists="image">
-            <div class="blog-list__image-wrap">
-                <img class="blog-list__image" src="<perch:blog id="image" type="image" width="80" height="80" crop="true" />" alt="<perch:blog id="postTitle" />" itemprop="image" />
-            </div>
-            </perch:if>
-            <div class="blog-item__wrap">
-                <h2 class="blog-list__title" itemprop="headline"><perch:blog id="postTitle" /></h2>
-                <p class="entry-published date blog-list__date">
-                    <meta name="date" itemprop="datePublished" content="<perch:blog id="postDateTime" type="date" label="Date" time="true" format="Y-m-d" divider-before="Publishing" />">
-                    <perch:blog id="postDateTime" format="%d %B %Y" />
-                </p>
-                <div class="description entry-summary blog-list__excerpt" itemprop="description">
-                    <perch:blog id="excerpt" type="textarea" textile="true" />
-                </div>
-            </div>
-        </a>
-    </li>
+<div class="hentry abstract row" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="abstract__left">
+        <perch:if exists="image">
+            <a href="<perch:blog id="postURL" />" class="abstract__image">
+                <img class="blog-list__image" src="<perch:blog id="image" type="image" crop="true" />" alt="<perch:blog id="postTitle" />" itemprop="image" />
+            </a>
+        </perch:if>
+    </div>
+    <div class="abstract__right">
+        <span class="abstract__meta"><perch:blog id="postDateTime" format="jS F Y" /></span>
+        <h3 class="abstract__heading">
+            <a href="<perch:blog id="postURL" />" class="abstract__link">
+                <perch:blog id="postTitle" />
+            </a>
+        </h3>
+        <perch:blog id="excerpt" type="textarea" textile="true" />
+        <a href="<perch:blog id="postURL" />" class="button">Read more</a>
+    </div>
+</div>
 <perch:after>
     </ul>
     <perch:if exists="paging">

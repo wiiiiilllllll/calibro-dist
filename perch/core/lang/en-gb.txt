@@ -385,5 +385,6 @@
     "Republishing is under way.": "Republishing is under way.",
     "Republishing: %s on page %s": "Republishing: %s on page %s",
     "Republishing completed successfully": "Republishing completed successfully",
-    "Editing Shared Regions": "Editing Shared Regions"
+    "Editing Shared Regions": "Editing Shared Regions",
+    "Move the page to this location": "Move the page to this location"
 }

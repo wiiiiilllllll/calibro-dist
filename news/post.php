@@ -2,17 +2,15 @@
 <?php perch_layout("global.head", ["title" => perch_blog_post_field(perch_get("s"), "postTitle", true)]); ?>
 <?php perch_layout("global.header"); ?>
 
-<div class="container main-container">
-	<main class="main wrapper">
-		<?php
-			$slug = perch_get('s'); // sets slug to equal postSlug
-			$html = perch_blog_post($slug, True);  // stores post in variable to use later
+<?php
+	$slug = perch_get('s'); // sets slug to equal postSlug
+	$html = perch_blog_post($slug, True);  // stores post in variable to use later
 
-		    if ($html) {
-		        echo $html; // display post
-		    }
-	    ?>
-		<?php include "news-nav.php" ?>
+    if ($html) {
+        echo $html; // display post
+    }
+?>
+<?php include "news-nav.php" ?>
 	</main>
 </div>
 
