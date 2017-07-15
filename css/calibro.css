@@ -1345,11 +1345,9 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 1em;
   padding: .5em 0 0;
   text-transform: uppercase; }
-  @media only screen and (min-width: 600px) {
-    .news-nav {
-      max-width: 58.33333%; } }
 
 .news-nav__link--disabled {
   color: #aaaaaa;
