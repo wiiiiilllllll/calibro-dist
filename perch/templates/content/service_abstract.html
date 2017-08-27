@@ -4,14 +4,14 @@
 			<a href="<perch:content id="_page" />" class="abstract__image">
 				<img src="<perch:content id="sidebar_image" />" alt="<perch:content id="page_title" />">
 			</a>
-		</perch:content>
+		</perch:if>
 	</div>
 	<div class="abstract__right">
-		<h3 class="abstract__heading">
+		<h2 class="abstract__heading">
 			<a href="<perch:content id="_page" />" class="abstract__link">
 				<perch:content id="page_title" />
 			</a>
-		</h3>
+		</h2>
 		<perch:content id="main_text" label="Main text" type="textarea" editor="markitup" markdown="true" chars="300" append="..." />
 		<a href="<perch:content id="_page" />" class="button">Read more</a>
 	</div>
