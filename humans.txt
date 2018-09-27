@@ -3,11 +3,12 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Will Wallace -- Web designer/developer
+    Stuart Choak -- Client
 
 # THANKS
 
-    <name>
+    Perch team - grabaperch.com
 
 # TECHNOLOGY COLOPHON
 
