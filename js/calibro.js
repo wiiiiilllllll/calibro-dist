@@ -88,16 +88,11 @@ var drop = {
 
 		$('body').on('click', function(e){
 			drop.closeAll();
-		});
 
-		$('body').on('click', '.drop__link', function(el){
-			el.preventDefault();
-			el.stopPropagation();
-			// drop.closeAll();
-				drop.toggle( $(el.target).parent() );
-
-			if ($(this).parents('.drop--open')) {
-				// drop.toggle( $(el.target).parent() );
+			if ($(e.target).hasClass('drop__link')) {
+				e.preventDefault();
+				e.stopPropagation();
+				drop.toggle( $(e.target).parent() );	
 			}
 		});
 	},
@@ -157,11 +152,6 @@ var menu = {
 		$('.nav')
 			.removeClass('nav--open')
 			.removeAttr('style');
-			// .addClass('nav--closing');
-
-		// setTimeout(function(){
-		// 	$('.nav').removeClass('nav--closing');
-		// }, 300);
 		overlay.close();
 		menu.isOpen = false;
 		setTimeout(function(){
