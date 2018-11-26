@@ -6,18 +6,8 @@
 <div class="container main-container">
 	<main class="main wrapper">
 		<h1 class="page-heading"><?php perch_pages_title(); ?></h1>
-		<?php
-		perch_content_custom('Sector', array(
-			'page'=>'/successes/*',
-			'template'=>'sector_abstract.html',
-			'each' => function($item) {
-				// process as necessary, then return the modified item
-				$item['page_title'] = 
-					perch_page_attribute('pageTitle', array( '_id' => $item['_pageID'], ), true);
-				return $item;
-			}
-		));
-		?>
+		<?php perch_content('Sector'); ?>
+		<?php // perch_layout('sector.nav.php'); // Coming soon... ?>
 	</main>
 </div>
 <?php perch_content('Call to action'); ?>

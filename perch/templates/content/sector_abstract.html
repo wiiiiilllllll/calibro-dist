@@ -1,0 +1,18 @@
+<div class="abstract row">
+	<div class="abstract__left">
+		<perch:if exists="sidebar_image">
+			<a href="<perch:content id="_page" />" class="abstract__image">
+				<img src="<perch:content id="sidebar_image" type="image" width="565" />" alt="<perch:content id="page_title" />">
+			</a>
+		</perch:if>
+	</div>
+	<div class="abstract__right">
+		<h2 class="abstract__heading">
+			<a href="<perch:content id="_page" />" class="abstract__link">
+				<perch:content id="page_title" />
+			</a>
+		</h2>
+		<perch:content id="main_text" label="Main text" type="textarea" editor="markitup" markdown="true" chars="300" append="..." />
+		<a href="<perch:content id="_page" />" class="button">Read more</a>
+	</div>
+</div>

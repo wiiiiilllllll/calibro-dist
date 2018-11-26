@@ -1,0 +1,17 @@
+<div class="article">
+	<div class="row">
+		<div class="<perch:if exists="sidebar_text OR sidebar_image">article__left</perch:if>">
+			<perch:content id="main_text" label="Main text" type="textarea" editor="markitup" markdown="true" />
+		</div>
+		<perch:if exists="sidebar_text OR sidebar_image">
+			<div class="article__right">
+				<div class="article__subtext">
+					<perch:content id="sidebar_text" label="Sidebar text (leave sidebar text and image empty to hide entire sidebar)" type="textarea" editor="markitup" markdown="true" />
+				</div>
+				<div class="article__subimage">
+					<img src='<perch:content id="sidebar_image" label="Sidebar image" type="image" />' alt="">
+				</div>
+			</div>
+		</perch:if>
+	</div>
+</div>
