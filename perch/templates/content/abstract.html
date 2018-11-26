@@ -1,11 +1,11 @@
 <div class="abstract row">
-	<div class="abstract__left">
-		<perch:if exists="sidebar_image">
+	<perch:if exists="sidebar_image">
+		<div class="abstract__left">
 			<a href="<perch:content id="_page" />" class="abstract__image">
 				<img src="<perch:content id="sidebar_image" type="image" width="565" />" alt="<perch:content id="page_title" />">
 			</a>
-		</perch:if>
-	</div>
+		</div>
+	</perch:if>
 	<div class="abstract__right">
 		<h2 class="abstract__heading">
 			<a href="<perch:content id="_page" />" class="abstract__link">
