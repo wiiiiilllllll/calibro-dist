@@ -387,5 +387,14 @@
     "Republishing completed successfully": "Republishing completed successfully",
     "Editing Shared Regions": "Editing Shared Regions",
     "Move the page to this location": "Move the page to this location",
-    "Subpage folder": "Subpage folder"
+    "Subpage folder": "Subpage folder",
+    "File name": "File name",
+    "Page already exists, or is a link only": "Page already exists, or is a link only",
+    "This page will have more pages below it": "This page will have more pages below it",
+    "The template for this region (%s) cannot be found.": "The template for this region (%s) cannot be found.",
+    "Template tag ID \u2018%s\u2019 contains disallowed characters": "Template tag ID \u2018%s\u2019 contains disallowed characters",
+    "No page file exists at that location to move.": "No page file exists at that location to move.",
+    "New pages should": "New pages should",
+    "Reference this master page": "Reference this master page",
+    "Copy this master page": "Copy this master page"
 }
