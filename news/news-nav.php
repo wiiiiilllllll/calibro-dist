@@ -1,4 +1,11 @@
+<?php if (!defined('PERCH_RUNWAY')) include($_SERVER['DOCUMENT_ROOT'].'/perch/runtime.php'); ?>
+
 <?php
+
+	if (perch_get('s') === false) {
+		echo '<script>window.location.replace("/news/");</script>';
+	}
+
 	$slug = perch_get('s'); // sets slug to equal postSlug
 
 	$data = perch_blog_custom(array(
