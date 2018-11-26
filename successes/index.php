@@ -9,7 +9,7 @@
 		<?php
 		perch_content_custom('Sector', array(
 			'page'=>'/successes/*',
-			'template'=>'sector_abstract.html',
+			'template'=>'abstract.html',
 			'each' => function($item) {
 				// process as necessary, then return the modified item
 				$item['page_title'] = 
