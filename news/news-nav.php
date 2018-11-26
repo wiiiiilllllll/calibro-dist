@@ -38,19 +38,17 @@
 	    'value'=>$date,
 	    'template'=>'blog/post_next.html'
 	), true); // stores post in a variable to use later
+
+	$class = (empty($prev) ? "news-nav--right" : "string.empty"); // for alignment if there's no prev link
 ?>
 
-<div class="news-nav">
+<div class="news-nav <?php echo $class ?>">
 <?php
-    if (empty($prev)){
-        echo '<a class="news-nav__link news-nav__link--disabled">Previous</a>';
-    } else {
+    if (!empty($prev)){
         echo $prev;
 	}
 
-	if (empty($next)){
-	    echo '<a class="news-nav__link news-nav__link--disabled">Next</a>';
-	} else {
+	if (!empty($next)){
 	    echo $next;
 	}
 ?>
