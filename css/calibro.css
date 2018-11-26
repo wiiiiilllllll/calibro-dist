@@ -1182,21 +1182,6 @@ footer p {
 .block__back__title {
   margin-top: 0; }
 
-.team-container {
-  background-color: #def395;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 480px;
-  padding: 1em 0; }
-
 .team-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1204,7 +1189,8 @@ footer p {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
-          flex-flow: row wrap; }
+          flex-flow: row wrap;
+  margin-top: 1em; }
 
 .member {
   cursor: pointer;
@@ -1219,6 +1205,8 @@ footer p {
   margin: 0 auto 1em;
   padding: 0 1%;
   text-align: center; }
+  .member:hover {
+    color: #afcb4a; }
   @media only screen and (min-width: 480px) {
     .member {
       -ms-flex-preferred-size: 31%;

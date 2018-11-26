@@ -2,14 +2,13 @@
 <?php perch_layout("global.head"); ?>
 <?php perch_layout("global.header"); ?>
 
-<div class="team-container">
-	<div class="team-wrapper wrapper">
-		<?php perch_content('Team Members'); ?>
-	</div>
-</div>
+<?php perch_content('Hero'); ?>
 <div class="container main-container">
 	<main class="main wrapper">
-		<h1 class="page-heading"><?php perch_content('Heading'); ?></h1>
+		<h1 class="page-heading"><?php perch_pages_title(); ?></h1>
+		<div class="team-wrapper">
+			<?php perch_content('Team Members'); ?>
+		</div>
 		<?php perch_content('Intro'); ?>
 	</main>
 </div>
