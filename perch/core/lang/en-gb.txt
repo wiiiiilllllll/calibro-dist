@@ -396,5 +396,9 @@
     "No page file exists at that location to move.": "No page file exists at that location to move.",
     "New pages should": "New pages should",
     "Reference this master page": "Reference this master page",
-    "Copy this master page": "Copy this master page"
+    "Copy this master page": "Copy this master page",
+    "Home page": "Home page",
+    "%sFile upload size is low.%s You can only upload files up to %sM.": "%sFile upload size is low.%s You can only upload files up to %sM.",
+    "An update is available for %s. You have %s and the current version is %s": "An update is available for %s. You have %s and the current version is %s",
+    "Menu successfully rebuilt": "Menu successfully rebuilt"
 }

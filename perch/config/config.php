@@ -10,11 +10,11 @@
             define("PERCH_DB_DATABASE", "calibro");
             break;
 
-        case('willwallace.xyz') :
-            define("PERCH_DB_USERNAME", 'willwall_calibro');
-            define("PERCH_DB_PASSWORD", 'calibroconsultants');
-            define("PERCH_DB_SERVER", "10.169.0.133");
-            define("PERCH_DB_DATABASE", "willwall_calibro");
+        case(preg_match('/ngrok\.io.*/', $http_host) ? $http_host : !$http_host) :
+            define("PERCH_DB_USERNAME", 'perch');
+            define("PERCH_DB_PASSWORD", 'fKv%6JR!K%NDDXdm8X7e4Kan2Q^WzePQ');
+            define("PERCH_DB_SERVER", "localhost");
+            define("PERCH_DB_DATABASE", "calibro");
             break;
 
         default :
