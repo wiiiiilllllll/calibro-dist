@@ -382,9 +382,6 @@ a {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip: ink; }
 
-:visited {
-  color: #6f6f6f; }
-
 a:hover {
   text-decoration: none; }
 
@@ -607,6 +604,30 @@ blockquote {
     margin-right: .3em; }
     .breadcrumb li + li:before {
       content: "> "; }
+
+.cookie-banner {
+  background-color: #555;
+  color: #ffffff;
+  font-size: .875em;
+  padding: .5em 0; }
+  .cookie-banner .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .cookie-banner p {
+    display: inline;
+    margin: 0; }
+
+.cookie-banner button {
+  cursor: pointer;
+  float: right;
+  padding: .25em 2em; }
 
 .hero-container {
   background-repeat: no-repeat;
