@@ -270,5 +270,6 @@
     "Listing authors": "Listing authors",
     "Preview Draft": "Preview Draft",
     "perch_blog.blog.create": "perch_blog.blog.create",
-    "perch_blog.blog.delete": "perch_blog.blog.delete"
+    "perch_blog.blog.delete": "perch_blog.blog.delete",
+    "Importing data": "Importing data"
 }

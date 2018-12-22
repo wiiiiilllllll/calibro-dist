@@ -396,5 +396,11 @@
     "Drag and drop the pages to reorder them.": "Drag and drop the pages to reorder them.",
     "Page orders successfully updated.": "Page orders successfully updated.",
     "Delete Asset": "Delete Asset",
-    "Are you sure you wish to delete this asset? %sIt may be in use on your site. Deleting will result in the asset no longer being available.%s": "Are you sure you wish to delete this asset? %sIt may be in use on your site. Deleting will result in the asset no longer being available.%s"
+    "Are you sure you wish to delete this asset? %sIt may be in use on your site. Deleting will result in the asset no longer being available.%s": "Are you sure you wish to delete this asset? %sIt may be in use on your site. Deleting will result in the asset no longer being available.%s",
+    "An update is available for %s. You have %s and the current version is %s": "An update is available for %s. You have %s and the current version is %s",
+    "Required": "Required",
+    "New pages should": "New pages should",
+    "Reference this master page": "Reference this master page",
+    "Copy this master page": "Copy this master page",
+    "The template for this region (%s) cannot be found.": "The template for this region (%s) cannot be found."
 }

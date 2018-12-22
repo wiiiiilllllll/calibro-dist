@@ -94,5 +94,16 @@
     "Editing form options": "Editing form options",
     "The file path %s is not writable by PHP.": "The file path %s is not writable by PHP.",
     "%s response": "%s response",
-    "Must be absolute system path outside site public root": "Must be absolute system path outside site public root"
+    "Must be absolute system path outside site public root": "Must be absolute system path outside site public root",
+    "Pagination": "Pagination",
+    "First page": "First page",
+    "First": "First",
+    "Previous page": "Previous page",
+    "Prev": "Prev",
+    "Page %d": "Page %d",
+    "Page %d, current page": "Page %d, current page",
+    "%d, current page": "%d, current page",
+    "Next page": "Next page",
+    "Last page": "Last page",
+    "Last": "Last"
 }
