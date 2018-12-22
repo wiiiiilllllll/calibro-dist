@@ -609,7 +609,8 @@ blockquote {
   background-color: #555;
   color: #ffffff;
   font-size: .875em;
-  padding: .5em 0; }
+  padding: .5rem 1rem;
+  z-index: 40; }
   .cookie-banner .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -627,6 +628,7 @@ blockquote {
 .cookie-banner button {
   cursor: pointer;
   float: right;
+  margin-left: 1em;
   padding: .25em 2em; }
 
 .hero-container {
