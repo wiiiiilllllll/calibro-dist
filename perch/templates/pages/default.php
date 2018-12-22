@@ -4,7 +4,7 @@
 
 <div class="container main-container">
 	<main class="main wrapper">
-	    <h2 class="page-heading"><?php perch_content('Main heading'); ?></h2>
+	    <h1 class="page-heading"><?php perch_content('Main heading'); ?></h1>
 	    <?php perch_content('Intro'); ?>
 	</main>
 </div>
