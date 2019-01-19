@@ -25,6 +25,11 @@
 		<perch:error for="message" type="required"><p class="form__error">Please enter a message</p></perch:error>
 	</fieldset>
 
+	<fieldset class="form__telephone">
+		<perch:label for="telephone">Please fill this out if you are a robot:</perch:label>
+		<perch:input type="text" id="telephone" antispam="honeypot" tabindex="-1" />
+	</fieldset>
+
 	<perch:input type="submit" id="submit" class="button form__button" value="Send" />
 
 	<perch:success>

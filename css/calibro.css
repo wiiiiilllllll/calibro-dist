@@ -1131,6 +1131,14 @@ footer p {
         clear: both;
         display: table; } }
 
+.form__telephone {
+  border: 0;
+  font-size: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  pointer-events: none; }
+
 .social {
   list-style-type: none;
   margin: 0;
