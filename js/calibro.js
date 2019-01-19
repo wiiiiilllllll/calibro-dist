@@ -39,6 +39,17 @@ var blocks = {
 $(function(){
 	blocks.init();
 });
+// Cookie banner yeah
+
+$("#cookie-accept").on("click", function(e) {
+	$("#cookie-banner").slideUp(400, function() {
+	    $(this).remove();
+	});
+	days = 365; //number of days to keep the cookie
+	myDate = new Date();
+	myDate.setTime(myDate.getTime()+(days*24*60*60*1000));
+	document.cookie = "comply_cookie = comply_yes; expires = " + myDate.toGMTString(); //creates the cookie: name|value|expiry
+})
 // Debounce: a multi-purpose utility that will prevent a function
 // from being triggered rapidly; eg. within 250ms
 // Courtesy: http://davidwalsh.name/javascript-debounce-function
@@ -88,16 +99,11 @@ var drop = {
 
 		$('body').on('click', function(e){
 			drop.closeAll();
-		});
 
-		$('body').on('click', '.drop__link', function(el){
-			el.preventDefault();
-			el.stopPropagation();
-			// drop.closeAll();
-				drop.toggle( $(el.target).parent() );
-
-			if ($(this).parents('.drop--open')) {
-				// drop.toggle( $(el.target).parent() );
+			if ($(e.target).hasClass('drop__link')) {
+				e.preventDefault();
+				e.stopPropagation();
+				drop.toggle( $(e.target).parent() );	
 			}
 		});
 	},
@@ -157,11 +163,6 @@ var menu = {
 		$('.nav')
 			.removeClass('nav--open')
 			.removeAttr('style');
-			// .addClass('nav--closing');
-
-		// setTimeout(function(){
-		// 	$('.nav').removeClass('nav--closing');
-		// }, 300);
 		overlay.close();
 		menu.isOpen = false;
 		setTimeout(function(){

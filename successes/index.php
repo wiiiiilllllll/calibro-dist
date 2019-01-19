@@ -2,44 +2,22 @@
 <?php perch_layout("global.head"); ?>
 <?php perch_layout("global.header"); ?>
 
+<?php perch_content('Hero'); ?>
 <div class="container main-container">
 	<main class="main wrapper">
-
-		<div class="row blocks-container">
-
-			<?php
-				// Conjures the content but doesn't actually display it
-			    perch_content_create('Successes', [
-			     'template'   => 'success_detail.html',
-			     'multiple'    => true,
-			     'edit-mode' => 'listdetail',
-			    ]);
-		    ?>
-	
-		    <?php
-		    	// Detect if we're on the "Our Successes" list page
-		    	// or a single Success detail page
-		    	// (detected via the current page URL)
-		        if (perch_get('s')) { // Detail mode
-		        	perch_content_custom('Successes', [
-	        	     'template' => 'success_detail.html',
-	        	     'filter' => 'slug',
-	        	     'match' => 'eq',
-	        	     'value' => perch_get('s'),
-	        	     'count' => 1,
-	        	    ]);
-	
-		        } else { // List mode
-		        	?>
-					<h1 class="page-heading"><?php perch_content('Heading'); ?></h1>
-					<?php
-		        	perch_content_custom('Successes', [
-						'template' => 'success_list.html',
-	        	    ]);
-		        }
-			?>
-		</div>
-		
+		<h1 class="page-heading"><?php perch_pages_title(); ?></h1>
+		<?php
+		perch_content_custom('Sector', array(
+			'page'=>'/successes/*',
+			'template'=>'abstract.html',
+			'each' => function($item) {
+				// process as necessary, then return the modified item
+				$item['page_title'] = 
+					perch_page_attribute('pageTitle', array( '_id' => $item['_pageID'], ), true);
+				return $item;
+			}
+		));
+		?>
 	</main>
 </div>
 <?php perch_content('Call to action'); ?>

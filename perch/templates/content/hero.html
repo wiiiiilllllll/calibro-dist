@@ -1,13 +1,12 @@
-<perch:content id="video-position" label="Video position" type="radio" options="Top, Centre, Bottom" suppress="true" />
-<div class="container hero-container" data-vide-bg='<perch:content id="hero_video" type="file" bucket="Video" label="Hero video" />' data-vide-options="position: 50% <perch:if id="video-position" value="Top">10%</perch:if><perch:if id="video-position" value="Centre">50%</perch:if><perch:if id="video-position" value="Bottom">90%</perch:if>">
+<perch:if exists="hero_text">
+<perch:content id="videoposition" label="Video position" type="radio" options="Top, Centre, Bottom" suppress="true" />
+<div class="container hero-container" data-vide-bg='<perch:content id="hero_video" type="file" bucket="Video" label="Hero video" />' data-vide-options="position: 50% <perch:if id="videoposition" value="Top">10%</perch:if><perch:if id="videoposition" value="Centre">50%</perch:if><perch:if id="videoposition" value="Bottom">90%</perch:if>">
   <div class="hero wrapper row">
     <div class="hero__banner">
       <div class="hero__text">
-        <perch:content id="hero_text" type="textarea" label="Hero text" size="s" count="chars" editor="markitup" markdown="true"/>
+        <perch:content id="hero_text" type="textarea" label="Hero text (leave empty to hide the entire hero section)" size="s" count="chars" editor="markitup" markdown="true"/>
       </div>
-      <perch:if exists="button_url">
-        <a href='<perch:content id="button_url" type="pagelist" label="Page" divider-before="Hero link (optional)" />' class='button hero__button'><perch:content id="button_text" type="text" label="Link text" /></a>
-      </perch:if>
     </div>
   </div>
 </div>
+</perch:if>
