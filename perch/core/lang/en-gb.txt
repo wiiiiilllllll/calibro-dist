@@ -400,5 +400,9 @@
     "Home page": "Home page",
     "%sFile upload size is low.%s You can only upload files up to %sM.": "%sFile upload size is low.%s You can only upload files up to %sM.",
     "An update is available for %s. You have %s and the current version is %s": "An update is available for %s. You have %s and the current version is %s",
-    "Menu successfully rebuilt": "Menu successfully rebuilt"
+    "Menu successfully rebuilt": "Menu successfully rebuilt",
+    "Subpage folder does not exist": "Subpage folder does not exist",
+    "Folder is not writable: \/var\/www\/public\/residential\/": "Folder is not writable: \/var\/www\/public\/residential\/",
+    "Sorry, that page could not be created.": "Sorry, that page could not be created.",
+    "Folder is not writable: \/var\/www\/public\/successes\/residential\/": "Folder is not writable: \/var\/www\/public\/successes\/residential\/"
 }
